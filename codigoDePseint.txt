@@ -1,0 +1,33 @@
+Ejercicio No.1 - Determinar si el número ingresado por el usuario es primo o no
+
+Algoritmo numerosPrimos
+	Escribir "Ingrese un número para determinar si es primo o no"
+	Leer numeroIngresadoPorElUsario
+	Si (numeroIngresadoPorElUsario MOD 2) == 0 Entonces
+		Escribir "El número ingresado no es un número primo"
+	SiNo
+		Escribir "El número ingresado es un número primo"
+	FinSi
+FinAlgoritmo
+
+Ejercicio No.2 - Determinar si el año ingresado por el usuario es bisiesto o no
+
+Algoritmo anioBisiesto
+	Definir anioIngresadoPorElUsuario Como Entero
+	Escribir "Ingresa un año y determinaremos si es bisiesto o no"
+	Leer anioIngresadoPorElUsuario
+	Si anioIngresadoPorElUsuario mod 4 == 0 Entonces
+		Si anioIngresadoPorElUsuario mod 100 == 0 Entonces
+			Si anioIngresadoPorElUsuario mod 400 == 0 Entonces
+				Escribir "El año " anioIngresadoPorElUsuario, " es bisiesto"
+			SiNo
+				Escribir "El año " anioIngresadoPorElUsuario, " no es bisiesto"
+			Fin Si
+		SiNo
+			Escribir "El año " anioIngresadoPorElUsuario, " es bisiesto"
+
+		Fin Si
+	SiNo
+		Escribir "El año " anioIngresadoPorElUsuario, " no es bisiesto"
+	Fin Si
+FinAlgoritmo
